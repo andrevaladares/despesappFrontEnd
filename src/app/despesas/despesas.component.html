@@ -1,3 +1,32 @@
-<div class="container">
-  despesas works!
+<h2>Incluir despesa</h2>
+<div class="container" id="formInclusao">
+  <div><label>Data:
+    <input type="text" [(ngModel)]="despesa.data" placeholder="Data">
+  </label>
+  </div>
+  <div><label>Descricao:
+    <input type="text" [(ngModel)]="despesa.descricao" placeholder="Descrição">
+  </label>
+  </div>
+  <div><label>Valor:
+    <input type="text" [(ngModel)]="despesa.valor" placeholder="Valor">
+  </label>
+  </div>
+  <div><label>Dono:
+    <input type="text" [(ngModel)]="despesa.donoDespesa" placeholder="Dono da despesa">
+  </label>
+  </div>
+
+  <button>Incluir</button>
+  <button>Limpar</button>
+  <button>Prévia</button>
+</div>
+<div class="container" id="previa">
+  <p>Total no mês: {{ previa.totalMes }}</p>
+  <ul>
+    <li *ngFor="let responsavel of previa.despesasPorResponsavel">
+      <p>Dono: {{ responsavel.nome }}</p>
+      <p>Valor pago: {{ responsavel.valorPago }}</p>
+    </li>
+  </ul>
 </div>
