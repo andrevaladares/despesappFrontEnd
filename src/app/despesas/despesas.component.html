@@ -1,32 +1,58 @@
-<h2>Incluir despesa</h2>
-<div class="container" id="formInclusao">
-  <div><label>Data:
-    <input type="text" [(ngModel)]="despesa.data" placeholder="Data">
-  </label>
-  </div>
-  <div><label>Descricao:
-    <input type="text" [(ngModel)]="despesa.descricao" placeholder="Descrição">
-  </label>
-  </div>
-  <div><label>Valor:
-    <input type="text" [(ngModel)]="despesa.valor" placeholder="Valor">
-  </label>
-  </div>
-  <div><label>Dono:
-    <input type="text" [(ngModel)]="despesa.donoDespesa" placeholder="Dono da despesa">
-  </label>
+<div class="row" id="formPrincipal">
+  <div class="col">
+    <h4>Incluir despesa</h4>
+    <form>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <label for="data">Data</label>
+          <div class="input-group">
+            <input id="data" class="form-control" placeholder="dd-mm-yyyy"
+                   name="data" [(ngModel)]="despesa.data" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                  <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="dono">Dono</label>
+          <input id="dono" name="dono" class="form-control" type="text" [(ngModel)]="despesa.donoDespesa"
+                 placeholder="Dono da despesa">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="descricao">Descricao</label>
+          <input id="descricao" name="descricao" class="form-control" type="text" [(ngModel)]="despesa.descricao"
+                 placeholder="Descrição">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="valor">Valor</label>
+          <input id="valor" name="valor" class="form-control" type="text" [(ngModel)]="despesa.valor"
+                 placeholder="Valor">
+        </div>
+      </div>
+      <div class="row row">
+        <div class="col-sm">
+          <button class="btn btn-primary mr-2 mt-2" type="button" (click)="onIncluir()">Incluir</button>
+          <button class="btn btn-secondary mr-2 mt-2" type="reset">Limpar</button>
+          <button class="btn btn-info mr-2 mt-2" type="button">Prévia</button>
+        </div>
+      </div>
+    </form>
+    <div class="row" id="previa" hidden>
+      <div class="col">
+        <p>Total no mês: {{ previa.totalMes }}</p>
+        <ul>
+          <li *ngFor="let responsavel of previa.despesasPorResponsavel">
+            <p>Dono: {{ responsavel.nome }}</p>
+            <p>Valor pago: {{ responsavel.valorPago }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <button>Incluir</button>
-  <button>Limpar</button>
-  <button>Prévia</button>
-</div>
-<div class="container" id="previa">
-  <p>Total no mês: {{ previa.totalMes }}</p>
-  <ul>
-    <li *ngFor="let responsavel of previa.despesasPorResponsavel">
-      <p>Dono: {{ responsavel.nome }}</p>
-      <p>Valor pago: {{ responsavel.valorPago }}</p>
-    </li>
-  </ul>
 </div>
