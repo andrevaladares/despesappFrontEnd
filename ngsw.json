@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1598820346315,
-  "index": "/index.html",
+  "timestamp": 1598820742650,
+  "index": "/despesappFrontEnd/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,16 +11,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "/favicon.ico",
-        "/index.html",
-        "/main.96dcf29059b96bb20105.js",
-        "/manifest.webmanifest",
-        "/ngsw-worker.js",
-        "/polyfills.b808154a7153c039cbd9.js",
-        "/runtime.e227d1a0e31cbccbf8ec.js",
-        "/safety-worker.js",
-        "/styles.deeca011ef00b8ed5358.css",
-        "/worker-basic.min.js"
+        "/despesappFrontEnd/favicon.ico",
+        "/despesappFrontEnd/index.html",
+        "/despesappFrontEnd/main.96dcf29059b96bb20105.js",
+        "/despesappFrontEnd/manifest.webmanifest",
+        "/despesappFrontEnd/ngsw-worker.js",
+        "/despesappFrontEnd/polyfills.b808154a7153c039cbd9.js",
+        "/despesappFrontEnd/runtime.e227d1a0e31cbccbf8ec.js",
+        "/despesappFrontEnd/safety-worker.js",
+        "/despesappFrontEnd/styles.deeca011ef00b8ed5358.css",
+        "/despesappFrontEnd/worker-basic.min.js"
       ],
       "patterns": []
     },
@@ -32,38 +32,38 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/despesappFrontEnd/assets/icons/icon-128x128.png",
+        "/despesappFrontEnd/assets/icons/icon-144x144.png",
+        "/despesappFrontEnd/assets/icons/icon-152x152.png",
+        "/despesappFrontEnd/assets/icons/icon-192x192.png",
+        "/despesappFrontEnd/assets/icons/icon-384x384.png",
+        "/despesappFrontEnd/assets/icons/icon-512x512.png",
+        "/despesappFrontEnd/assets/icons/icon-72x72.png",
+        "/despesappFrontEnd/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "370e9519e46e80930d78e655bf9b6cb3fccf2f42",
-    "/main.96dcf29059b96bb20105.js": "447416c726cefbed8a7f266ea1abe70b57ef4ae7",
-    "/manifest.webmanifest": "64f2d03a136d31ed153cbb64080bf9c577f7cbfa",
-    "/ngsw-worker.js": "601253069e8f1d4f717e0bd54332587669d68261",
-    "/polyfills.b808154a7153c039cbd9.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
-    "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/safety-worker.js": "f532926317210be6e2679d21748dc44a35389807",
-    "/styles.deeca011ef00b8ed5358.css": "66df2349c84f1c152a4599912dd75ca7ba59472c",
-    "/worker-basic.min.js": "f532926317210be6e2679d21748dc44a35389807"
+    "/despesappFrontEnd/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/despesappFrontEnd/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/despesappFrontEnd/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/despesappFrontEnd/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/despesappFrontEnd/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/despesappFrontEnd/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/despesappFrontEnd/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/despesappFrontEnd/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/despesappFrontEnd/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/despesappFrontEnd/index.html": "43c55a4ad1936a3fa1fbd430f45fd56f3627f737",
+    "/despesappFrontEnd/main.96dcf29059b96bb20105.js": "447416c726cefbed8a7f266ea1abe70b57ef4ae7",
+    "/despesappFrontEnd/manifest.webmanifest": "64f2d03a136d31ed153cbb64080bf9c577f7cbfa",
+    "/despesappFrontEnd/ngsw-worker.js": "601253069e8f1d4f717e0bd54332587669d68261",
+    "/despesappFrontEnd/polyfills.b808154a7153c039cbd9.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
+    "/despesappFrontEnd/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/despesappFrontEnd/safety-worker.js": "f532926317210be6e2679d21748dc44a35389807",
+    "/despesappFrontEnd/styles.deeca011ef00b8ed5358.css": "66df2349c84f1c152a4599912dd75ca7ba59472c",
+    "/despesappFrontEnd/worker-basic.min.js": "f532926317210be6e2679d21748dc44a35389807"
   },
   "navigationUrls": [
     {
