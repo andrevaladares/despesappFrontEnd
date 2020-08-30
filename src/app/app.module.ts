@@ -7,6 +7,8 @@ import {FormsModule} from '@angular/forms';
 import {NgbDateAdapter, NgbDateParserFormatter, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CustomAdapter} from './support/CustomAdapter';
 import {CustomDateParserFormatter} from './support/CustomDateParserFormatter';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {CustomDateParserFormatter} from './support/CustomDateParserFormatter';
     imports: [
         BrowserModule,
         FormsModule,
-        NgbModule
+        NgbModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     ],
   providers: [
     {provide: NgbDateAdapter, useClass: CustomAdapter},
